@@ -231,27 +231,9 @@ else:
 
     jabatan_ttd = jabatan
 
-unit = st.sidebar.text_input(
-    "Unit Kerja",
-    value="Balai Karantina Hewan, Ikan dan Tumbuhan Riau"
-)
-
 dasar = st.sidebar.text_area(
-    "Dasar Pelaksanaan",
+    "Daftar Kegiatan",
     height=100
-)
-
-rhk = st.sidebar.text_input(
-    "Rencana Hasil Kerja",
-    value=""
-)
-ra = st.sidebar.text_input(
-    "Rencana Aksi",
-    value=""
-)
-iki = st.sidebar.text_input(
-    "Indikator Kerja Individu",
-    value=""
 )
 
 kolom_file, kolom_ttd = st.columns(2)
