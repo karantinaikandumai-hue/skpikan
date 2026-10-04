@@ -517,7 +517,7 @@ if file_penugasan and file_pelepasan:
         )
 
         semua_kesehatan = st.checkbox(
-            "Semua Kesehatan = BEBAS OPTK",
+            "Semua Kesehatan = BEBAS HPI/HPIK",
             value=True
         )
 
@@ -854,7 +854,7 @@ if file_penugasan and file_pelepasan:
 
             elements.append(
                 Paragraph(
-                    "LAPORAN PELAKSANAAN KEGIATAN KARANTINA TUMBUHAN",
+                    "LAPORAN PELAKSANAAN KEGIATAN KARANTINA IKAN",
                     style_judul
                 )
             )
@@ -885,40 +885,16 @@ if file_penugasan and file_pelepasan:
                     jabatan
                 ],
 
-                [
-                    "",
-                    "e. Unit Kerja",
-                    ":",
-                    unit
-                ],
-
+               
                 [
                     "2.",
-                    "Dasar Pelaksanaan",
+                    "Daftar Kegiatan",
                     ":",
                     dasar
                 ],
 
                 [
                     "3.",
-                    "Rencana Hasil Kerja",
-                    ":",
-                    rhk
-                ],
-                [
-                    "4.",
-                    Paragraph("Rencana Aksi", style_wrap),
-                    ":",
-                    Paragraph(ra, style_wrap)
-                ],
-                [
-                    "5.",
-                    Paragraph("Indikator Kinerja Individu", style_wrap),
-                    ":",
-                    Paragraph(iki, style_wrap)
-                ],
-                [
-                    "6.",
                     "Waktu Pelaksanaan",
                     ":",
                     waktu_pelaksanaan
