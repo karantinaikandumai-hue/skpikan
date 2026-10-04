@@ -545,7 +545,7 @@ if file_penugasan and file_pelepasan:
 
                 kesehatan_override[nomor] = st.text_input(
                     f"Kesehatan - {nomor}",
-                    value="BEBAS OPTK"
+                    value="BEBAS HPI/HPIK"
                 )
 
         # ==========================================
@@ -572,19 +572,19 @@ if file_penugasan and file_pelepasan:
         col1, col2 = st.columns(2)
 
         with col1:
-            generate_apt = st.button("📄 Generate APT")
+            generate_apt = st.button("📄 Generate PHPI")
 
         with col2:
-            generate_pkt = st.button("📄 Generate PKT")
+            generate_pkt = st.button("📄 Generate TPHPI")
         
        # Simpan status generate
         if generate_apt:
             st.session_state.generated = True
-            st.session_state.format_laporan = "APT"
+            st.session_state.format_laporan = "PHPI"
 
         if generate_pkt:
             st.session_state.generated = True
-            st.session_state.format_laporan = "PKT"
+            st.session_state.format_laporan = "TPHPI"
 
         if st.session_state.get("generated", False):
 
@@ -651,11 +651,11 @@ if file_penugasan and file_pelepasan:
                 )
 
                 kesehatan = (
-                    "BEBAS OPTK"
+                    "BEBAS HPI/HPIK"
                     if semua_kesehatan
                     else kesehatan_override.get(
                         nomor,
-                        "BEBAS OPTK"
+                        "BEBAS HPI/HPIK"
                     )
                 )
 
@@ -1420,7 +1420,7 @@ if file_penugasan and file_pelepasan:
             kiri = Table([
                 [
                     Paragraph(
-                        "<br/>Mengetahui,<br/>Ketua Tim Karantina Tumbuhan",
+                        "<br/>Mengetahui,<br/>Ketua Tim Karantina Ikan",
                         style_wrap
                     )
                 ],
@@ -1433,7 +1433,7 @@ if file_penugasan and file_pelepasan:
         
                 [
                     Paragraph(
-                        "<b>Surya Dharma, S.P.</b><br/>NIP. 197705152001121002",
+                        "<b>Mumin Rifai, S.St.Pi.</b><br/>NIP. 197504042005021001",
                         style_wrap
                     )
                 ]
