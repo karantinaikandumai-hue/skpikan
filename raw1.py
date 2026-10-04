@@ -955,7 +955,7 @@ if file_penugasan and file_pelepasan:
                 Spacer(1,5)
             )
 
-        if format_laporan == "APT":
+        if format_laporan == "PHPI":
             # ==========================================
             # HEADER TABEL
             # ==========================================
